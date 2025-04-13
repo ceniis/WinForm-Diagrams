@@ -28,6 +28,5 @@ namespace Lab5
         {
             Process.Start(new ProcessStartInfo("https://github.com/ceniis") { UseShellExecute = true });
         }
-
     }
 }

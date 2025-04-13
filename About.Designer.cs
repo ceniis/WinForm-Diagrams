@@ -33,7 +33,6 @@
             label1 = new Label();
             label2 = new Label();
             btnBack = new Button();
-            btnMeow = new Button();
             btnGitHub = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -42,10 +41,10 @@
             // 
             pictureBox1.BackColor = Color.RosyBrown;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(9, 11);
+            pictureBox1.Location = new Point(9, 9);
             pictureBox1.Margin = new Padding(0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(289, 289);
+            pictureBox1.Size = new Size(184, 247);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -55,7 +54,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.DarkMagenta;
-            label1.Location = new Point(304, 12);
+            label1.Location = new Point(196, 10);
             label1.Name = "label1";
             label1.Size = new Size(244, 28);
             label1.TabIndex = 1;
@@ -66,19 +65,20 @@
             label2.AutoSize = true;
             label2.Font = new Font("Nirmala UI", 10.8F);
             label2.ForeColor = Color.DarkMagenta;
-            label2.Location = new Point(304, 40);
+            label2.Location = new Point(196, 38);
             label2.Name = "label2";
-            label2.Size = new Size(462, 125);
+            label2.Size = new Size(397, 150);
             label2.TabIndex = 2;
-            label2.Text = "2nd year student of the \r\nNational Aerospace University \"Kharkiv Aviation Institute\"\r\nI like cats and capybaras 💜\r\n\r\nThe app allowes you to create and see charts 😉";
+            label2.Text = "2nd year student of the \r\nNational Aerospace University \r\n\"Kharkiv Aviation Institute\"\r\nI like cats and capybaras 💜\r\n\r\nThe app allowes you to create and see charts 😉";
             // 
             // btnBack
             // 
             btnBack.BackgroundImage = (Image)resources.GetObject("btnBack.BackgroundImage");
+            btnBack.Cursor = Cursors.Hand;
             btnBack.FlatAppearance.BorderSize = 0;
             btnBack.FlatAppearance.MouseOverBackColor = Color.Thistle;
             btnBack.FlatStyle = FlatStyle.Flat;
-            btnBack.Location = new Point(724, 9);
+            btnBack.Location = new Point(549, 9);
             btnBack.Margin = new Padding(0);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(31, 30);
@@ -86,26 +86,14 @@
             btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
             // 
-            // btnMeow
-            // 
-            btnMeow.BackgroundImage = (Image)resources.GetObject("btnMeow.BackgroundImage");
-            btnMeow.FlatAppearance.BorderSize = 0;
-            btnMeow.FlatAppearance.MouseOverBackColor = Color.Thistle;
-            btnMeow.FlatStyle = FlatStyle.Flat;
-            btnMeow.Location = new Point(691, 236);
-            btnMeow.Margin = new Padding(0);
-            btnMeow.Name = "btnMeow";
-            btnMeow.Size = new Size(64, 64);
-            btnMeow.TabIndex = 5;
-            btnMeow.UseVisualStyleBackColor = true;
-            // 
             // btnGitHub
             // 
             btnGitHub.BackgroundImage = (Image)resources.GetObject("btnGitHub.BackgroundImage");
+            btnGitHub.Cursor = Cursors.Hand;
             btnGitHub.FlatAppearance.BorderSize = 0;
             btnGitHub.FlatAppearance.MouseOverBackColor = Color.Thistle;
             btnGitHub.FlatStyle = FlatStyle.Flat;
-            btnGitHub.Location = new Point(304, 236);
+            btnGitHub.Location = new Point(196, 190);
             btnGitHub.Margin = new Padding(0);
             btnGitHub.Name = "btnGitHub";
             btnGitHub.Size = new Size(64, 64);
@@ -118,10 +106,9 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LavenderBlush;
-            ClientSize = new Size(764, 309);
+            ClientSize = new Size(590, 265);
             ControlBox = false;
             Controls.Add(btnGitHub);
-            Controls.Add(btnMeow);
             Controls.Add(btnBack);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -144,7 +131,6 @@
         private Label label1;
         private Label label2;
         private Button btnBack;
-        private Button btnMeow;
         private Button btnGitHub;
     }
 }
