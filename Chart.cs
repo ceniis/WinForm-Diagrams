@@ -15,7 +15,7 @@ namespace Lab5
         private List<int> values;
         private int chartType;
 
-        public Chart(List<int> values, int chartType) 
+        public Chart(List<int> values, int chartType)
         {
             InitializeComponent();
 
@@ -25,13 +25,13 @@ namespace Lab5
             this.WindowState = FormWindowState.Maximized;
         }
 
-        private Brush GetBrush(int index)
+        public Brush GetBrush(int index)
         {
             Brush[] brushes = { Brushes.Red, Brushes.Green, Brushes.Blue, Brushes.Orange, Brushes.Purple, Brushes.Yellow, Brushes.Cyan, Brushes.Magenta };
             return brushes[index % brushes.Length];
         }
 
-        private void Chart_Paint(object sender, PaintEventArgs e)
+        public void Chart_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
 
@@ -49,7 +49,7 @@ namespace Lab5
             }
         }
 
-        private void DrawPieChart(Graphics g)
+        public void DrawPieChart(Graphics g)
         {
             if (values == null || values.Count == 0) return;
 
@@ -67,7 +67,7 @@ namespace Lab5
             label1.Text = "Pie Chart";
         }
 
-        private void DrawVerticalBarChart(Graphics g)
+        public void DrawVerticalBarChart(Graphics g)
         {
             if (values == null || values.Count == 0) return;
 
@@ -87,7 +87,7 @@ namespace Lab5
             label1.Text = "Vertical Bar Chart";
         }
 
-        private void DrawHorizontalBarChart(Graphics g)
+        public void DrawHorizontalBarChart(Graphics g)
         {
             if (values == null || values.Count == 0) return;
 
@@ -106,6 +106,11 @@ namespace Lab5
 
 
             label1.Text = "Horizontal Bar Chart";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
